@@ -1,3 +1,8 @@
+function limparCampos(){
+    document.getElementById('#valor1').value = ""
+    document.getElementById('#valor2').value = ""
+}
+
 
 function somar() {
     var numero1 = document.getElementById('numero1').value;
@@ -9,6 +14,7 @@ function somar() {
     var resultado = numero1 + numero2;
     document.getElementById('resultado').textContent = `A Soma é: ${resultado}`;
     
+    limparCampos()
 }
 
 function calculadora(){
@@ -30,6 +36,8 @@ function calculadora(){
 
     var divisao = valor1 / valor2;
     document.getElementById('dividir').textContent = `A Divisão é: ${divisao}`;
+
+    limparCampos()
 
 }
 

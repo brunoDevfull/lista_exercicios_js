@@ -6,7 +6,7 @@
     
     
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <title>Lista de Exercicios em JS !!!</title>
 </head>
@@ -14,31 +14,36 @@
     <main>
         <h1>Lista de Exercicios em JS !!!</h1>
 
-        <h4>1. Faça um algoritmo que receba dois números e exiba o resultado da sua soma.</h4>
+            <h4>1. Faça um algoritmo que receba dois números e exiba o resultado da sua soma.</h4>
 
-        <label for="">Informe o Valor 1</label><br>
-        <input type="number" id="numero1" placeholder="Digite um Valor"><br>
+            <label for="">Informe o Valor 1</label><br>
+            <input type="number" id="numero1" placeholder="Digite um Valor"><br>
 
-        <label for="">Informe o Valor 2</label><br>
-        <input type="number" id="numero2" placeholder="Digite um Valor"> <br>
+            <label for="">Informe o Valor 2</label><br>
+            <input type="number" id="numero2" placeholder="Digite um Valor"> <br>
 
-        <button onclick="somar()"> Somar </button>
-        <p id="resultado"></p>
+            <button onclick="somar()"> Somar </button>
+            <button onclick="limparCampos()"> Limpar </button>
+            <p id="resultado"></p>
+
+            
 
         <h4>2. Faça um algoritmo que receba dois números e ao final mostre a soma, subtração,
             multiplicação e a divisão dos números lidos.</h4>
 
-        <label for="">Informe o Valor 1</label><br>
-        <input type="number" id="valor1" placeholder="digite um valor"><br>
+            <label for="">Informe o Valor 1</label><br>
+            <input type="number" id="valor1" placeholder="digite um valor"><br>
 
-        <label for="">Informe o Valor 2</label><br>
-        <input type="number" id="valor2" placeholder="digite um valor"><br>
+            <label for="">Informe o Valor 2</label><br>
+            <input type="number" id="valor2" placeholder="digite um valor"><br>
 
-        <button onclick="calculadora()"> Resultado </button>
-        <p id="somar"></p>
-        <p id="subtrair"></p>
-        <p id="multiplicar"></p>
-        <p id="dividir"></p><br>
+            <button onclick="calculadora()"> Resultado </button>
+            <p id="somar"></p>
+            <p id="subtrair"></p>
+            <p id="multiplicar"></p>
+            <p id="dividir"></p><br>
+
+            <button onclick="limparCampos()"> Limpar </button>
 
         <h4>3. Escrever um algoritmo para determinar o consumo médio de um automóvel sendo
             fornecida a distância total percorrida pelo automóvel e o total de combustível gasto.</h4>
@@ -51,6 +56,8 @@
 
         <button onclick="consumoMedio()"></button>
         <p id="cosumoMedio"></p><br>
+
+        <button type="button" onclick="limparCampos()"> Limpar </button>
 
 
     </main>
